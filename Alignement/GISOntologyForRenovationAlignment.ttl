@@ -1,0 +1,48 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gor: <http://www.semanticweb.org/ecdf_md/GISOntologyForRenovation#> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+
+
+#################################################################
+#    Class equivalence
+#################################################################
+
+###  http://www.semanticweb.org/ecdf_md/GISOntologyForRenovation#Building
+ubmo:Batiment  owl:equivalentClass  gor:Building .
+
+###  http://w3id.org/UrbanAndBuildingMultiscaleOntology#Municipality
+ubmo:Commune owl:equivalentClass gor:Municipality .
+
+###  http://w3id.org/UrbanAndBuildingMultiscaleOntology#Country
+ubmo:Pays owl:equivalentClass gor:Country .
+
+###  http://w3id.org/UrbanAndBuildingMultiscaleOntology#District
+ubmo:Quartier owl:equivalentClass gor:District .
+
+###  http://w3id.org/UrbanAndBuildingMultiscaleOntology#BuildingBlock 
+ubmo:CadastreBatiment  skos:closeMatch gor:BuildingBlock .
+
+###  http://w3id.org/UrbanAndBuildingMultiscaleOntology#Parcel
+ubmo:CadastreParcelle skos:closeMatch  gor:Parcel .
+
+###  http://w3id.org/UrbanAndBuildingMultiscaleOntology#Vegetation 
+ubmo:Vegetation  skos:closeMatch gor:Vegetation .
+
+###  http://w3id.org/UrbanAndBuildingMultiscaleOntology#River
+ubmo:VoieDEau skos:closeMatch gor:River .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+@prefix admun: <http://inspire.ec.europa.eu/ont/au#> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+#################################################################
+#    Class equivalence
+#################################################################
+
+###  http://inspire.ec.europa.eu/ont/au#AdministrativeUnit
+ubmo:Region rdfs:subClassOf admun:AdministrativeUnit .
+
+ubmo:Departement rdfs:subClassOf admun:AdministrativeUnit .
+
+ubmo:Arrondissement rdfs:subClassOf admun:AdministrativeUnit .
+
+ubmo:Commune ordfs:subClassOf admun:AdministrativeUnit .
+
+ubmo:Quartier rdfs:subClassOf admun:AdministrativeUnit .
+
+ubmo:IRIS rdfs:subClassOf admun:AdministrativeUnit .
+
+#################################################################
+#    Data properties equivalence
+#################################################################
+
+###  http://inspire.ec.europa.eu/ont/au#AdministrativeBoundary.legalSatus
+ubmo:statut  owl:equivalentProperty admun:legalSatus .
+
+###  http://inspire.ec.europa.eu/ont/au#hasGeometry
+ubmo:geoshape  owl:equivalentProperty locn:geometry .
+
+###  http://inspire.ec.europa.eu/ont/au#postName
+ubmo:arroundisst owl:subPropertyOf admun:postName  .
+ubmo:nom_commune owl:subPropertyOf admun:postName  .
+ubmo:depart owl:subPropertyOf admun:postName  .
+ubmo:quartier owl:subPropertyOf admun:postName  .
+ubmo:nom owl:subPropertyOf admun:postName  .
+ubmo:zonelib  owl:subPropertyOf admun:postName  .
+ubmo:depart owl:subPropertyOf admun:postName  .
+
+###  http://inspire.ec.europa.eu/ont/au#postCode 
+ubmo:codcomm  owl:subPropertyOf admun:postCode  .
+ubmo:code owl:subPropertyOf admun:postCode  .
+ubmo:code_insee owl:subPropertyOf admun:postCode  .
+ubmo:codgeo owl:subPropertyOf admun:postCode  .
+ubmo:zoneexcde owl:subPropertyOf admun:postCode  .
+ubmo:insee_ar owl:subPropertyOf admun:postCode  .
+ubmo:region_code owl:subPropertyOf admun:postCode  .

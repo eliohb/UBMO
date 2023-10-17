@@ -1,0 +1,174 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix simbldg: <http://www.lbl.gov/namespaces/Sim/BuildingModel#> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+
+#################################################################
+#    Class equivalence
+#################################################################
+
+http://www.lbl.gov/namespaces/Sim/BuildingModel#SimBuilding
+ubmo:Batiment  owl:equivalentClass simbldg:SimBuilding .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimBeam
+ubmo:IfcBeam  skos:closeMatch simbldg:SimBeam.
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimBuildingElement
+ubmo:IfcBuildingElement  skos:closeMatch simbldg:SimBuildingElement .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimBuildingElementProxy
+ubmo:IfcBuildingElementProxy  skos:closeMatch simbldg:SimBuildingElementProxy .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimBuildingStory
+ubmo:IfcBuildingStorey skos:closeMatch simbldg:SimBuildingStory .
+ 
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimColumn
+ubmo:IfcColumn skos:closeMatch simbldg:SimColumn .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimDoor
+ubmo:IfcDoor skos:closeMatch simbldg:SimDoor .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimMember
+ubmo:IfcMember  skos:closeMatch simbldg:SimMember .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimRailing
+ubmo:IfcRailing  skos:closeMatch simbldg:SimRailing .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimRamp
+ubmo:IfcRamp skos:closeMatch simbldg:SimRamp .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimRampFlight
+ubmo:IfcRampFlight skos:closeMatch simbldg:SimRampFlight .
+  
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimRoof
+ubmo:IfcRoof skos:closeMatch simbldg:SimRoof .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimSite
+ubmo:IfcSite skos:closeMatch simbldg:SimSite  .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimSlab
+ubmo:IfcSlab skos:closeMatch  simbldg:SimSlab .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimSpace
+ubmo:IfcSpace skos:closeMatch simbldg:SimSpace .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimStair
+ubmo:IfcStair skos:closeMatch simbldg:SimStair .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimStairFlight
+ubmo:IfcStairFlight skos:closeMatch simbldg:SimStairFlight .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimVirtualElement
+ubmo:IfcVirtualElement skos:closeMatch simbldg:SimVirtualElement .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimWall
+ubmo:IfcWall skos:closeMatch simbldg:SimWall .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimWindow
+ubmo:IfcWindow skos:closeMatch simbldg:SimWindow .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#SimfurnitureElement
+ubmo:IfcfurnitureElement skos:closeMatch simbldg:SimfurnitureElement .
+
+
+#################################################################
+#   Property equivalence
+#################################################################
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#buildingHeight
+ubmo:ifctotalheight skos:closeMacth simbldg:buildingHeight .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#buildableArea
+ubmo:ifcsitecoverage skos:closeMacth simbldg:buildableArea .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#numberOfRiser
+ubmo:ifcnumberofriser skos:closeMacth simbldg:numberOfRiser .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#numberOfThreads 
+ubmo:ifcnumberoftreads skos:closeMacth simbldg:numberOfThreads .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#overallHeight
+ubmo:ifcoverallheight skos:closeMacth simbldg:overallHeight .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#overWidth
+ubmo:ifcoverallwidth skos:closeMacth simbldg:overWidth .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#beamCrossSectionArea
+ubmo:IfcBeam.ifccrosssectionarea skos:closeMacth simbldg:beamCrossSectionArea .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#columnCrossSectionArea
+ubmo:IfcColumn.ifccrosssectionarea skos:closeMacth simbldg:columnCrossSectionArea .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#beamGrossVolume
+ubmo:IfcBeams.ifcgrossvolume skos:closeMacth  simbldg:beamGrossVolume .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#slabNetVolume 
+ubmo:IfcSlab.ifcnetvolume skos:closeMacth  simbldg:slabNetVolume .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#wallNetVolume 
+ubmo:IfcWall.ifcnetvolume skos:closeMacth simbldg:wallNetVolume .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#columNetVolume 
+ubmo:IfcColumn.ifcnetvolume skos:closeMacth simbldg:columNetVolume .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#spaceNetVolume 
+ubmo:IfcSapce.ifcnetvolume oskos:closeMacth simbldg:spaceNetVolume .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#slabPerimeter
+ubmo:IfcSlab.ifcperimeter skos:closeMacth simbldg:slabPerimeter .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#doorPerimeter 
+ubmo:IfcDoor.ifcperimeter skos:closeMacth simbldg:doorPerimeter .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#sitePerimeter 
+ubmo:IfcSite.ifcperimeter skos:closeMacth simbldg:sitePerimeter .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#windowPerimeter
+ubmo:IfcWindow.ifcperimeter skos:closeMacth simbldg:windowPerimeter .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#builidngStoryPerimeter
+ubmo:IfcBuildingStorey.ifcperimeter skos:closeMacth simbldg:builidngStoryPerimeter .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#beamLength
+ubmo:IfcBeam.ifcnominallength skos:closeMacth simbldg:beamLength .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#wallLength
+ubmo:IfcWall.ifcnominallength skos:closeMacth simbldg:wallLength .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#spaceGrossFloorArea
+ubmo:IfcSapce.ifcgrossfloorarea skos:closeMacth simbldg:spaceGrossFloorArea .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#buildingGrossFloorArea
+ubmo:IfcBuilding.ifcgrossfloorarea skos:closeMacth simbldg:buildingGrossFloorArea .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#buildingStoryGrossFloorArea
+ubmo:IfcBuildingStorey.ifcgrossfloorarea skos:closeMacth simbldg:buildingStoryGrossFloorArea .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#wallNetSideArea
+ubmo:ifcnetsidearealeft skos:closeMacth simbldg:wallNetSideArea .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#wallNetSideArea
+ubmo:ifcnetsidearearight skos:closeMacth simbldg:wallNetSideArea .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#doorIsExternal
+ubmo:IfcDoor.ifcisexternal skos:closeMacth simbldg:doorIsExternal .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#slabIsExternal
+ubmo:IfcSlab.ifcisexternal skos:closeMacth simbldg:slabIsExternal .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#wallIsExternal
+ubmo:IfcWall.ifcisexternal skos:closeMacth simbldg:wallIsExternal .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#windowIsExternal
+ubmo:IfcWindow.ifcisexternal skos:closeMacth simbldg:windowIsExternal .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#stairIsExternal
+ubmo:IfcStair.ifcisexternal skos:closeMacth simbldg:stairIsExternal .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#stairFlightRise
+ubmo:IfcStairFlight.ifcisexternal skos:closeMacth simbldg:stairFlightRise .
+
+###  http://www.lbl.gov/namespaces/Sim/BuildingModel#name
+ubmo:ifcname skos:closeMacth simbldg:name .
+
+

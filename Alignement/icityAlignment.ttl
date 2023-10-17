@@ -1,0 +1,48 @@
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix icty: <http://ontology.eil.utoronto.ca/icity/OTN#> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+
+
+#################################################################
+#    Class equivalence
+#################################################################
+
+###  http://ontology.eil.utoronto.ca/icity/OTN#Building
+ubmo:Batiment owl:equivalentClass icity:Building  .
+
+###  http://ontology.eil.utoronto.ca/icity/OTN#Land_Cover_And_Use
+ubmo:CadastreParcelle skos:closeMatch icity:Land_Cover_And_Use .
+
+###  http://ontology.eil.utoronto.ca/icity/OTN#Forest_and_Semi_Natural_Area
+ubmo:Vegetation  skos:closeMatch icity:Forest_and_Semi_Natural_Area .
+
+#################################################################
+#    Data properties equivalence
+#################################################################
+
+
+###  http://ontology.eil.utoronto.ca/icity/OTN#alternate_Name
+ubmo:slug  skos:closeMatch icity:alternate_Name .
+
+###  http://ontology.eil.utoronto.ca/icity/OTN#external_Link
+ubmo:wikipedia skos:closeMatch icity:external_Link .
+
+###  http://ontology.eil.utoronto.ca/icity/OTN#public_Accessible
+ubmo:accessibilite owl:equivalentProperty icity:public_Accessible .
+
+###  http://ontology.eil.utoronto.ca/icity/OTN#starting_Date
+ubmo:date_de_creation  skos:closeMatch icity:starting_Date .
+
+###  http://ontology.eil.utoronto.ca/icity/OTN#length
+ubmo:shape_len  owl:equivalentProperty icity:length .
+
+###  http://ontology.eil.utoronto.ca/icity/OTN#external_identifier
+ubmo:id  owl:subPropertyOf icity:external_identifier .
+ubmo:id_bati  owl:subPropertyOf icity:external_identifier .
+ubmo:id_hydro   owl:subPropertyOf icity:external_identifier  .
+ubmo:id_parc  owl:subPropertyOf icity:external_identifier .
+ubmo:identifiant  owl:subPropertyOf icity:external_identifier  .
+ubmo:identifiant_Batiment  owl:subPropertyOf icity:external_identifier  .
+ubmo:gml_id owl:subPropertyOf icity:external_identifier .

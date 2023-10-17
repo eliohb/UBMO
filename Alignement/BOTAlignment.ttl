@@ -1,0 +1,147 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+
+
+#################################################################
+#    Class equivalence
+#################################################################
+
+###  https://w3id.org/bot#Site
+ubmo:IfcSite skos:closeMatch bot:Site .
+
+###  http://w3id.org/UrbanAndBuildingMultiscaleOntology#Batiment
+ubmo:Batiment  owl:equivalentClass  bot:Building .
+
+###  https://w3id.org/bot#Storey
+ubmo:IfcBuildingStorey skos:closeMatch bot:Storey .
+
+###  https://w3id.org/bot#Space
+ubmo:IfcSpace skos:closeMatch bot:Space .
+
+###  https://w3id.org/bot#Zone
+ubmo:CadastreBatiment skos:closeMatch bot:Zone .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcBeam  skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcBoiler skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcBurner  skos:narrowMatch bot:BuildingElement.
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcChimney  skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcColumn skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcCompressor  skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcController skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcCovering skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcCurtainWall skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcDoor skos:narrowMatch bot:BuildingElement.
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcFilter skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcFooting  skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcFurniture skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcInterceptor skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcMember skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcOpeningElement skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcPile skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcPipeFitting skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcPipeSegment skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcPlate skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcPump skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcRailing skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcRampFlight skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcRoof skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcSanitaryTerminal skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcRamp skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcShadingDevice skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcSlab skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcStackTerminal skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcStair skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcStairFlight skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcTank skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcUnitaryEquipment skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcValve skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcVirtualElement skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcWall skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcWasteTerminal skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcWindow skos:narrowMatch bot:BuildingElement .
+
+###  https://w3id.org/bot#BuildingElement
+ubmo:IfcBuildingElement skos:closeMatch bot:BuildingElement .
+
+
+#################################################################
+#    Property equivalence
+#################################################################
+

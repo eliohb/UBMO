@@ -1,0 +1,18 @@
+@prefix bu: <http://inspire.ec.europa.eu/ont/bu-base#> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+#################################################################
+#    Class equivalence
+#################################################################
+
+
+### http://inspire.ec.europa.eu/ont/bu-base#Building
+ubmo:IfcBuilding owl:equivalentClass bu:Building .
+
+### http://inspire.ec.europa.eu/ont/bu-base#BuildingPart
+ubmo:IfcBuildingStorey rdfs:subClassOf bu:BuildingPart .
+ubmo:IfcZone rdfs:subClassOf bu:BuildingPart .
+ubmo:IfcSpace rdfs:subClassOf bu:BuildingPart .

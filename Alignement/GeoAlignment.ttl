@@ -1,0 +1,67 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix igeo: <http://rdf.insee.fr/def/geo#> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+
+#################################################################
+#    Class equivalence
+#################################################################
+
+
+###  http://rdf.insee.fr/def/geo#Arrondissement
+ubmo:Arrondissement owl:equivalentClass  igeo:Arrondissement .
+
+###  http://rdf.insee.fr/def/geo#Commune
+ubmo:Commune owl:equivalentClass  igeo:Commune.
+
+###  http://rdf.insee.fr/def/geo#Departement
+ubmo:Departement owl:equivalentClass  igeo:Departement.
+
+###  http://rdf.insee.fr/def/geo#GrandQuartier
+ubmo:Quartier owl:equivalentClass igeo:GrandQuartier .
+
+###  http://rdf.insee.fr/def/geo#IRIS
+ ubmo:IRIS  owl:equivalentClass igeo:IRIS.
+
+###  http://rdf.insee.fr/def/geo#Pays
+ ubmo:Pays owl:equivalentClass igeo:Pays .
+
+###  http://rdf.insee.fr/def/geo#Region
+ubmo:Region  owl:equivalentClass igeo:Region.
+
+#################################################################
+#    Data properties equivalence
+#################################################################
+
+
+###  http://rdf.insee.fr/def/geo#codeCommune
+ubmo:codcomm owl:equivalentProperty igeo:codeCommune .
+
+###  http://rdf.insee.fr/def/geo#codeDepartement
+ubmo:code owl:equivalentProperty igeo:codeDepartement .
+
+###   http://rdf.insee.fr/def/geo#codePaysCourt
+ubmo:code_insee owl:equivalentProperty igeo:codePaysCourt .
+
+###  http://rdf.insee.fr/def/geo#codePays
+ubmo:codgeo owl:equivalentProperty igeo:codePays .
+
+###  http://rdf.insee.fr/def/geo#codeIRIS
+ubmo:zoneexcde owl:equivalentProperty igeo:codeIRIS .
+
+###  http://rdf.insee.fr/def/geo#codeArrondissement
+ubmo:insee_ar owl:equivalentProperty igeo:codeArrondissement .
+
+###  http://rdf.insee.fr/def/geo#codeRegion
+ubmo:newcode owl:equivalentProperty igeo:codeRegion .
+ubmo:region_code owl:equivalentProperty igeo:codeRegion .
+
+###  http://rdf.insee.fr/def/geo#nom
+ubmo:arroundisst owl:subPropertyOf igeo:nom .
+ubmo:commune owl:subPropertyOf igeo:nom .
+ubmo:depart owl:subPropertyOf igeo:nom .
+ubmo:nom_commune  owl:subPropertyOf igeo:nom .
+ubmo:quartier owl:subPropertyOf igeo:nom .
+ubmo:nom owl:subPropertyOf igeo:nom .
+ubmo:zonelib owl:subPropertyOf igeo:nom .
+                                        

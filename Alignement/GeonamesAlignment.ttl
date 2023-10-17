@@ -1,0 +1,59 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+
+
+#################################################################
+#    Class equivalence
+#################################################################
+
+### http://www.geonames.org/ontology#Feature
+ubmo:Pays rdfs:subClassOf gn:Feature .
+ubmo:Region  rdfs:subClassOf gn:Feature .
+ubmo:Departement rdfs:subClassOf gn:Feature .
+ubmo:Arrondissement rdfs:subClassOf gn:Feature .
+ubmo:Commune rdfs:subClassOf gn:Feature .
+ubmo:Quartier rdfs:subClassOf gn:Feature .
+ubmo:IRIS rdfs:subClassOf gn:Feature .
+ubmo:CadastreParcelle rdfs:subClassOf gn:Feature .
+ubmo:CadastreBatiment rdfs:subClassOf gn:Feature .
+ubmo:EquipementEauUsee rdfs:subClassOf gn:Feature .
+ubmo:ReseauAssainissement rdfs:subClassOf gn:Feature .
+ubmo:Usine rdfs:subClassOf gn:Feature .
+ubmo:Vegetation rdfs:subClassOf gn:Feature .
+ubmo:VoieDEau  rdfs:subClassOf gn:Feature .
+ubmo:WaterWasteManhole rdfs:subClassOf gn:Feature .
+
+#################################################################
+#    Data properties equivalence
+#################################################################
+
+
+### http://www.geonames.org/ontology#name
+ubmo:arroundisst owl:subPropertyOf gn:name .
+ubmo:region_name owl:subPropertyOf gn:name .
+ubmo:depart owl:subPropertyOf gn:name .
+ubmo:nom_commune  owl:subPropertyOf gn:name .
+ubmo:quartier owl:subPropertyOf gn:name .
+ubmo:nom owl:subPropertyOf gn:name .
+ubmo:zonelib owl:subPropertyOf gn:name .
+
+### http://www.geonames.org/ontology#colloquialName
+ubmo:slug  owl:equivalentProperty gn:colloquialName .
+ 
+###  http://data.ign.fr/def/geofla#geonamesID
+ubmo:id  owl:subPropertyOf gn:geonamesID .
+ubmo:id_bati  owl:subPropertyOf gn:geonamesID .
+ubmo:id_hydro   owl:subPropertyOf gn:geonamesID  .
+ubmo:id_parc  owl:subPropertyOf gn:geonamesID .
+ubmo:identifiant  owl:subPropertyOf gn:geonamesID  .
+ubmo:identifiant_Batiment  owl:subPropertyOf gn:geonamesID  .
+ubmo:gml_id owl:subPropertyOf gn:geonamesID .
+
+###  http://data.ign.fr/def/geofla#wikipediaArticle
+gn:wikipediaArticle owl:hasValue ubmo:wikipedia.
+ 
+ 
+ 

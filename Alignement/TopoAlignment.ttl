@@ -1,0 +1,42 @@
+@prefix topo: <http://data.ign.fr/def/topo#> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+#################################################################
+#    Class equivalence
+#################################################################
+
+###  http://data.ign.fr/def/topo#Batiment
+ubmo:Batiment owl:equivalentClass topo:Batiment .
+
+###  http://data.ign.fr/def/topo#Commune
+ubmo:Commune owl:equivalentClass topo:Commune.
+
+###  http://data.ign.fr/def/topo#Bati
+ubmo:CadastreBatiment skos:closeMatch topo:Bati .
+
+###  http://data.ign.fr/def/topo#ZoneActiviteInteret 
+ubmo:EquipementEauUsee skos:broadMatch topo:ZoneActiviteInteret .
+
+###  http://data.ign.fr/def/topo#CanalisationDEau 
+ubmo:ReseauAssainissement  skos:broadMatch topo:CanalisationDEau .
+
+###  http://data.ign.fr/def/topo#ZoneDeVegetation
+ubmo:Vegetation skos:closeMatch topo:ZoneDeVegetation .
+
+###  http://data.ign.fr/def/topo#CoursDEau
+ubmo:VoieDEau skos:closeMatch topo:CoursDEau .
+
+#################################################################
+#    Data properties equivalence
+#################################################################
+
+
+###  http://data.ign.fr/def/topo#miseEnService
+ubmo:date_de_creation  skos:closeMatch topo:miseEnService .
+
+###  http://data.ign.fr/def/topo#posSol
+ubmo:altitude_amont  owl:subPropertyOf topo:posSol .
+ubmo:altitude_aval  owl:subPropertyOf topo:posSol .

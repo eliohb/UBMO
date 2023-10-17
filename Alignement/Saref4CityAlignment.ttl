@@ -1,0 +1,37 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix saref4city:<http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+
+#################################################################
+#    Class equivalence
+#################################################################F
+
+ ###  http://w3id.org/UrbanAndBuildingMultiscaleOntology#City
+ubmo:Commune owl:equivalentClass saref4city:City . 
+
+### http://w3id.org/UrbanAndBuildingMultiscaleOntology#Country
+ubmo:Pays owl:equivalentClass saref4city:Country .
+
+### http://w3id.org/UrbanAndBuildingMultiscaleOntology#District
+ubmo:Quartier owl:equivalentClass saref4city:District .
+
+#################################################################
+#    Data properties equivalence
+#################################################################
+
+
+###  http://w3id.org/UrbanAndBuildingMultiscaleOntology#miseEnService
+ubmo:date_de_creation  skos:closeMacth  saref4city:hasCreationDate .
+
+###  http://w3id.org/UrbanAndBuildingMultiscaleOntology#miseEnService
+ubmo:lastupdate  skos:closeMacth  saref4city:hasLastUpdateDate .
+
+###  http://w3id.org/UrbanAndBuildingMultiscaleOntology#hasName
+ubmo:arroundisst owl:subPropertyOf saref4city:hasName .
+ubmo:commune owl:subPropertyOf saref4city:hasName .
+ubmo:depart owl:subPropertyOf saref4city:hasName .
+ubmo:nom_commune  owl:subPropertyOf saref4city:hasName .
+ubmo:quartier owl:subPropertyOf saref4city:hasName .
+ubmo:nom owl:subFPropertyOf saref4city:hasName .
+ubmo:zonelib owl:subPropertyOf saref4city:hasName .

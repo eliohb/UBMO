@@ -1,0 +1,45 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix geofla: <http://data.ign.fr/def/geofla#> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+
+
+#################################################################
+#    Class equivalence
+#################################################################
+
+###  http://data.ign.fr/def/geofla#Arrondissement
+ ubmo:Arrondissement  owl:equivalentClass geofla:Arrondissement.
+
+###  http://data.ign.fr/def/geofla#Commune
+ ubmo:Commune  owl:equivalentClass geofla:Commune.
+
+###  http://data.ign.fr/def/geofla#Departement
+ ubmo:Departement  owl:equivalentClass geofla:Departement.
+
+###  http://data.ign.fr/def/geofla#Region
+ ubmo:Region  owl:equivalentClass geofla:Region.
+ 
+#################################################################
+#    Data properties equivalence
+#################################################################
+
+###  http://data.ign.fr/def/geofla#codeComm
+ubmo:codcomm owl:equivalentProperty geofla:codeComm .
+ubmo:comexcde owl:equivalentProperty geofla:codeComm .
+
+###  http://data.ign.fr/def/geofla#codeDpt
+ubmo:code owl:equivalentProperty geofla:codeDpt .
+
+###  http://data.ign.fr/def/geofla#population
+ubmo:population owl:equivalentProperty geofla:population .
+
+###  http://data.ign.fr/def/geofla#numInsee 
+ubmo:code_insee owl:equivalentProperty geofla:numInsee  .
+
+###  http://data.ign.fr/def/geofla#codeArr
+ubmo:insee_ar owl:equivalentProperty geofla:codeArr .
+
+###  http://data.ign.fr/def/geofla#codeReg  
+ubmo:newcode owl:equivalentProperty geofla:codeReg  .
+ubmo:region_code owl:equivalentProperty geofla:codeReg  .

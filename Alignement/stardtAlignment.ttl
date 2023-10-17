@@ -1,0 +1,80 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pcrs: <http://www.w3id.org/Ontology/CNIG_PCRS_v2.0#> .
+@prefix stardt:<###  http://www.w3id.org/StarDT#> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+
+
+#################################################################
+#    Class equivalence
+#################################################################
+
+
+###  http://www.w3id.org/StarDT#CanalisationAssainissementPluvialeType
+ubmo:ReseauAssainissement owl:equivalentClass stardt:CanalisationEauType .    
+
+###  http://www.w3id.org/StarDT#RegardVisitable
+ubmo:Regard owl:equivalentClass stardt:RegardVisitable .
+
+#################################################################
+#    Data properties equivalence
+#################################################################
+
+
+###  http://www.w3id.org/StarDT#miseAJour
+ubmo:lastupdate owl:equivalentProperty stardt:miseAJour .
+
+###  http://www.w3id.org/StarDT#commentaire
+ubmo:precision_diametre owl:subPropertyOf stardt:commentaire .
+ubmo:precision_date_de_pose owl:subPropertyOf stardt:commentaire .
+ubmo:precision_diametre  owl:subPropertyOf stardt:commentaire .
+ubmo:precision_materiau owl:subPropertyOf stardt:commentaire .
+
+###  http://www.w3id.org/StarDT#typeAssainissement
+ubmo:type owl:equivalentProperty stardt:typeAssainissement .
+
+###  http://www.w3id.org/StarDT#visibleSurface
+ubmo:figplan owl:equivalentProperty stardt:visibleSurface .
+
+###  http://www.w3id.org/StarDT#precisionz
+ubmo:altitude_amont owl:subPropertyOf stardt:precisionz.
+ubmo:altitude_aval owl:subPropertyOf stardt:precisionz.
+
+###  http://www.w3id.org/StarDT#statut 
+ubmo:enabled owl:equivalentProperty stardt:statut .
+
+###  http://www.w3id.org/StarDT#localisation 
+ubmo:geopoint owl:equivalentProperty stardt:localisation .
+
+###  http://www.w3id.org/StarDT#geometrie
+ubmo:geoshape owl:equivalentProperty stardt:geometrie .
+
+###  http://www.w3id.org/StarDT#identifiant
+ubmo:identifiant owl:equivalentProperty stardt:identifiant .
+
+###  http://www.w3id.org/StarDT#dimesion
+ubmo:diametre owl:equivalentProperty stardt:dimension .
+
+###  http://www.w3id.org/StarDT#fonctionCable
+ubmo:ancillaryrole owl:equivalentProperty stardt:fonctionCable .
+
+###  http://www.w3id.org/StarDT#idInterneGestionnaire
+ubmo:objectid owl:equivalentProperty stardt:idInterneGestionnaire . 
+
+###  http://www.w3id.org/StarDT#idAffleurant
+ubmo:gml_id owl:equivalentProperty stardt:idAffleurant .
+
+###  http://www.w3id.org/StarDT#materiau
+ubmo:materiau owl:equivalentProperty stardt:materiau .
+
+###  http://www.w3id.org/StarDT#nom
+ubmo:nom owl:equivalentProperty stardt:nom .
+
+###  http://www.w3id.org/StarDT#dispositifProtection
+ubmo:type_de_protection  owl:equivalentProperty stardt:dispositifProtection .
+
+###  http://www.w3id.org/StarDT#
+ubmo:observation owl:equivalentProperty stardt: .
+
+
+

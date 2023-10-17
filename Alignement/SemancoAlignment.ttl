@@ -1,0 +1,76 @@
+@prefix semanco: <http://www.semanco-project.eu/2012/5/SEMANCO.owl#> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+#################################################################
+#    Class equivalence
+#################################################################
+
+###  http://www.semanco-project.eu/2012/5/SEMANCO.owl#Building
+ubmo:Batiment owl:equivalentClass semanco:Building .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#Municipality
+ubmo:Commune  owl:equivalentClass semanco:Municipality .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#Country
+ubmo:Pays owl:equivalentClass semanco:Country .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#Land
+ubmo:Arrondissement skos:narrowMatch semanco:Land .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#Building_Cadastral_Data
+ubmo:CadastreBatiment  skos:closeMatch semanco:Building_Cadastral_Data .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#Land
+ubmo:Departement skos:narrowMatch semanco:Land .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#Window
+ubmo:IfcWindow skos:closeMacth semanco:Window .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#Door
+ubmo:IfcDoor skos:closeMacth semanco:Door .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#Floor
+ubmo:IfcSlab skos:closeMacth semanco:Floor .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#Wall
+ubmo:IfcWall skos:closeMacth semanco:Wall .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#Space
+ubmo:IfcSpace skos:closeMacth semanco:Space .
+
+
+#################################################################
+#    Data properties equivalence
+#################################################################
+
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#window_HeightValue
+ubmo:IfcWindow.ifcoverallheight skos:closeMacth semanco:window_HeightValue .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#window_LengthValue
+ubmo:IfcWindow.ifcoverallwidth  skos:closeMacth semanco:window_LengthValue .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#window_NameValue
+ubmo:IfcWindow.ifcname skos:closeMacth semanco:window_NameValue .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#window_NameValue
+ubmo:IfcDoor.ifcname skos:closeMacth semanco:door_NameValue .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#building_NameValue
+ubmo:IfcBuilding.ifcname skos:closeMacth semanco:building_NameValue .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#building_NameValue
+ubmo:IfcBuilding.ifcnevolume skos:closeMacth semanco:building_VolumeValue .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#building_NameValue
+ubmo:IfcBuilding.ifcnetfloorarea  skos:closeMacth semanco:building_Net_Floor_AreaValue .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#land_IDValue
+ubmo:code skos:narrowMatch  semanco:land_IDValue .
+ubmo:insee_ar skos:narrowMatch  semanco:land_IDValue .
+
+### http://www.semanco-project.eu/2012/5/SEMANCO.owl#land_BuildabilityValue
+ubmo:ifcsitecoverage skos:closeMacth  semanco:land_BuildabilityValue.

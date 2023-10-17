@@ -1,0 +1,159 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix luse: <http://www.opengis.net/citygml/landuse/2.0/#> .
+@prefix core: <http://www.opengis.net/citygml/2.0/> .
+@prefix veg: <http://www.opengis.net/citygml/vegetation/2.0/> .
+@prefix wtr: <http://www.opengis.net/citygml/waterbody/2.0/> .
+@prefix bldg: <http://www.opengis.net/citygml/building/2.0/> .
+@prefix ubmo: <http://w3id.org/UrbanAndBuildingMultiscaleOntology#> .
+
+
+#################################################################
+#    Class equivalence
+#################################################################
+
+### http://www.opengis.net/citygml/2.0/_Site
+ubmo:IfcSite skos:closeMatch core:_Site . 
+
+###  http://www.opengis.net/citygml/building/2.0/_AbstractBuilding
+ubmo:Batiment  owl:equivalentClass  bldg:_AbstractBuilding .
+
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcBuildingElement skos:closeMatch bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcRamp skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcRoof skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcStair skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcSlab skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcBeam skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcBoiler skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcBurner skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcChimney skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcColumn skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcCompressor  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcController  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcCovering  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcCurtainWall  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcFilter  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcFooting  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcInterceptor  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcMember  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcPile skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcPipeFitting  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcPipeSegment  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcPlate skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcPump   skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcRailing   skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcSanitaryTerminal  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcRampFlight  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcShadingDevice skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcStackTerminal  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcStairFlight  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcTank  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcUnitaryEquipment skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcValve  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcVirtualElement  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcWall  skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingInstallation
+ubmo:IfcWasteTerminal skos:narrower bldg:BuildingInstallation .
+
+###  http://www.opengis.net/citygml/building/2.0/_Opening
+ubmo:IfcOpeningElement  skos:closeMatch bldg:_Opening .
+ 
+###  http://www.opengis.net/citygml/building/2.0/Door
+ubmo:IfcDoor  skos:closeMatch bldg:Door .
+
+###  http://www.opengis.net/citygml/building/2.0/Window
+ubmo:IfcWindow  skos:closeMatch bldg:Window .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingFurniture
+ubmo:IfcFurniture skos:closeMatch bldg:BuildingFurniture .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingPart
+ubmo:IfcSpace skos:narrower bldg:BuildingPart .
+
+###  http://www.opengis.net/citygml/building/2.0/BuildingPart
+ubmo:IfcBuildingStorey skos:narrower bldg:BuildingPart .
+
+###  http://www.opengis.net/citygml/landuse/2.0/#LandUse
+ubmo:CadastreBatiment skos:closeMatch luse:LandUse . 
+
+###  http://www.opengis.net/citygml/landuse/2.0/#LandUse
+ubmo:CadastreBatiment owl:hasValue luse:LandUse.lod0MultiSurface .
+
+###  http://www.opengis.net/citygml/vegetation/2.0/_VegetationObejct
+ubmo:Vegetation owl:equivalentClass veg:_VegetationObejct .
+
+###  http://www.opengis.net/citygml/waterbody/2.0/WaterBody
+ubmo:VoieDEau owl:hasValue wtr:WaterBody.lod1MultiCurve .
+
+###  http://www.opengis.net/citygml/waterbody/2.0/WaterBody
+ubmo:VoieDEau skos:closeMatch  wtr:WaterBody .
+
